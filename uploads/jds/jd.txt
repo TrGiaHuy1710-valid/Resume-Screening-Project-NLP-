@@ -1,0 +1,69 @@
+Job Description – Oracle PL/SQL Developer
+
+Position: Oracle PL/SQL Developer
+Location: [City, State or Remote]
+Employment Type: Full-time
+
+About the Role
+
+We are looking for an experienced Oracle PL/SQL Developer with strong expertise in designing, developing, and optimizing complex database solutions. The ideal candidate will have hands-on experience in writing efficient SQL/PLSQL code, creating stored procedures, triggers, and packages, and supporting large-scale enterprise applications in sectors such as Banking, Insurance, or Finance.
+
+Key Responsibilities
+
+Design, develop, and maintain PL/SQL stored procedures, functions, packages, and triggers.
+
+Create and manage database objects including tables, indexes, materialized views, and constraints.
+
+Perform SQL/PLSQL performance tuning and optimization using AWR, ADDM, Explain Plan, Hints, and Tkprof.
+
+Develop and maintain data migration scripts using SQL*Loader, Data Pump (expdp/impdp), external tables, and UTL_FILE.
+
+Work with collections (associative arrays, nested tables, VARRAYs) and cursors (explicit, parameterized, bulk collect).
+
+Implement business rules using row-level, statement-level, instead-of, and compound triggers.
+
+Collaborate with functional/business teams to understand requirements and translate them into technical solutions.
+
+Participate in the full software development lifecycle (SDLC) including requirement gathering, design, development, testing, and deployment.
+
+Provide production support for backend database systems and troubleshoot performance issues.
+
+Work in Agile/Scrum environments with tools like JIRA, Confluence, Bitbucket, GitHub, Jenkins, Bamboo.
+
+Qualifications
+
+Bachelor’s or Master’s degree in Computer Science, Engineering, or related field.
+
+5+ years of professional experience as an Oracle PL/SQL Developer.
+
+Strong expertise in Oracle 11g/12c database development.
+
+Experience in database design, ER modeling, normalization, and data flow diagrams.
+
+Proficiency in SQL performance tuning, query optimization, and partitioning.
+
+Experience with Oracle utilities such as Export/Import, Data Pump, and scheduling jobs with DBMS_JOB or DBMS_SCHEDULER.
+
+Hands-on experience with UNIX shell scripting for automation.
+
+Good knowledge of data migration techniques and working with flat files (CSV, XML).
+
+Excellent communication skills and ability to work both independently and in a team.
+
+Preferred Qualifications
+
+Exposure to Informatica or other ETL tools.
+
+Experience with version control and CI/CD tools (Git, Jenkins, Bamboo).
+
+Knowledge of data privacy regulations (GDPR, HIPAA) and compliance-related projects.
+
+What We Offer
+
+Competitive compensation and benefits package.
+
+Opportunity to work on large-scale enterprise database systems.
+
+Collaborative and innovative team environment.
+
+Professional growth and skill development opportunities.

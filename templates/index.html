@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Resume–JD Matcher</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<body class="bg-light">
+<div class="container py-4">
+  <h1 class="mb-4">Resume–JD Matcher</h1>
+
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      <div class="mb-3">
+        {% for msg in messages %}
+          <div class="alert alert-info" role="alert">{{ msg }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h5 class="card-title">1) Upload JD (TXT or PDF)</h5>
+      <form action="{{ url_for('upload_jd') }}" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <input class="form-control" type="file" name="jd_file" required>
+        </div>
+        <button class="btn btn-primary" type="submit">Upload JD</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">2) Select JD & Upload Resume</h5>
+      {% if not model_loaded %}
+        <div class="alert alert-warning">
+          Model not loaded. Ensure <code>cv_job_maching.model</code> is present next to <code>app.py</code>.
+        </div>
+      {% endif %}
+      <form action="{{ url_for('match') }}" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label class="form-label">Choose a JD</label>
+          <select class="form-select" name="selected_jd" required>
+            <option value="" selected disabled>-- Select JD --</option>
+            {% for jd in jds %}
+              <option value="{{ jd }}">{{ jd }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Upload Resume (PDF or TXT)</label>
+          <input class="form-control" type="file" name="resume_file" required>
+        </div>
+
+        <button class="btn btn-success" type="submit" {% if not model_loaded %}disabled{% endif %}>
+          Compute Matching Score
+        </button>
+      </form>
+      <p class="text-muted mt-2">
+        * Score = cosine similarity (%) giữa vector Doc2Vec của Resume và JD (đã tiền xử lý).
+      </p>
+    </div>
+  </div>
+
+  <hr class="my-4">
+  <p class="text-center text-muted">© Resume–JD Matcher</p>
+</div>
+</body>
+</html>

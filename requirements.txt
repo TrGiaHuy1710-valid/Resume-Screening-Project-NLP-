@@ -1,0 +1,7 @@
+gensim
+nltk
+numpy
+pandas
+plotly
+PyPDF2
+requests
